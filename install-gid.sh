@@ -5,14 +5,13 @@ cd /tmp
 VERSION=14.1.8d
 # Get the file
 TARFILENAME=gid${VERSION}-linux-x64.tar.xz
-wget --quiet https://web.cimne.upc.edu/users/fjgarate/descargas/images/${TARFILENAME}
+wget --quiet https://www.gidhome.com/archive/GiD_Developer_Versions/Linux/amd64/${TARFILENAME}
 # Unzip
 tar -Jxf ${TARFILENAME}
 rm ${TARFILENAME}
-# 
-mkdir /gid
+
 mv gid${VERSION}-x64/* /gid
-cd /gid
-PREFERENCESFOLDER=$HOME/.gid/${VERSION}/
-mkdir -p ${PREFERENCESFOLDER}
-PREFERENCESFILE=${PREFERENCESFOLDER}gid.ini
+# cd /gid
+# PREFERENCESFOLDER=$HOME/.gid/${VERSION}/
+# mkdir -p ${PREFERENCESFOLDER}
+# PREFERENCESFILE=${PREFERENCESFOLDER}gid.ini
