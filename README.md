@@ -1,1 +1,2 @@
-# gid-kratos-tester-docker
+# GiD Unix - latest developer version
+
