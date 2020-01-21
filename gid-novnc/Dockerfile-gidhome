@@ -44,8 +44,10 @@ RUN rm /root/create-basic-preferences.sh
 ENV DISPLAY :0
 
 WORKDIR /root
-ADD noVNC-0.6.2 /root/novnc/
-RUN ln -s /root/novnc/vnc_auto.html /root/novnc/index.html 
+# ADD noVNC-0.6.2 /root/novnc/
+# RUN ln -s /root/novnc/vnc_auto.html /root/novnc/index.html 
+ADD noVNC-1.1.0 /root/novnc/
+RUN ln -s /root/novnc/vnc_lite.html /root/novnc/index.html 
 
 # Expose Port (Note: if you change it do it as well in surpervisord.conf)
 # **port 8083** is the http://xxx:8083 vnc-like visualization of GiD application in a graphical environment
