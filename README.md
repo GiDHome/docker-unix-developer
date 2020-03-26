@@ -4,5 +4,5 @@
 
 Creates the **gid-unix-developer** docker image
 
-gid-novnc moved to [https://github.com/GiDHome/gid-novnc](https://github.com/GiDHome/gid-novnc)
+gid-novnc has been moved to [https://github.com/GiDHome/gid-novnc](https://github.com/GiDHome/gid-novnc)
 
