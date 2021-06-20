@@ -1,11 +1,12 @@
 # GiD folder in the root
-cd /tmp
+#cd /tmp
 
 # Version to check
-VERSION=14.1.8d
+VERSION=15.1.1d
 # Get the file
 TARFILENAME=gid${VERSION}-linux-x64.tar.xz
 wget --quiet https://www.gidhome.com/archive/GiD_Developer_Versions/Linux/amd64/${TARFILENAME}
+ls
 # Unzip
 tar -Jxf ${TARFILENAME}
 rm ${TARFILENAME}

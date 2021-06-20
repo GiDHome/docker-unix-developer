@@ -20,6 +20,7 @@ RUN apt-get update && apt-get -y install \
 	curl \
         libglu1-mesa \
         libharfbuzz0b
-COPY ./install-gid.sh "/tmp/install-gid.sh"
-RUN chmod 750 "/tmp/install-gid.sh"
-RUN "/tmp/install-gid.sh"
+WORKDIR /tmp
+COPY ./install-gid.sh "install-gid.sh"
+RUN chmod 750 "./install-gid.sh"
+RUN "./install-gid.sh"
