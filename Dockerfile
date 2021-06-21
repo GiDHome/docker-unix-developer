@@ -19,7 +19,8 @@ RUN apt-get update && apt-get -y install \
         xz-utils \
 	curl \
         libglu1-mesa \
-        libharfbuzz0b
+        libharfbuzz0b \
+	binutils
 WORKDIR /tmp
 COPY ./install-gid.sh "install-gid.sh"
 RUN chmod 750 "./install-gid.sh"
