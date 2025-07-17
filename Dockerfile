@@ -1,5 +1,4 @@
 
-# FROM thewtex/opengl
 FROM ubuntu:latest
 
 WORKDIR /gid
@@ -24,6 +23,7 @@ RUN apt-get update && apt-get -y install \
 WORKDIR /tmp
 COPY ./install-gid.sh "install-gid.sh"
 RUN chmod 750 "./install-gid.sh"
+
 # Set the version of GiD to install as first parameter
 ARG GID_VERSION=17.1.5d
 
