@@ -1,7 +1,7 @@
 rem echo off
 @echo off
 
-set gid_version=17.1.5d
+set gid_version=17.2.0-IR
 git tag -f %gid_version%
 git push --tags --force
 

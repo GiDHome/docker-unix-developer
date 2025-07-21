@@ -25,7 +25,7 @@ COPY ./install-gid.sh "install-gid.sh"
 RUN chmod 750 "./install-gid.sh"
 
 # Set the version of GiD to install as first parameter
-ARG GID_VERSION=17.1.5d
+ARG GID_VERSION=17.2.0-IR
 
 RUN echo "Installing GiD version ${GID_VERSION}..."
 
@@ -38,5 +38,5 @@ RUN rm -rf /tmp/* && \
 	apt-get autoclean && \
 	rm -rf /var/lib/apt/lists/*
 
-# docker build --progress=plain --build-arg GID_VERSION=17.1.5d -t gid:17.1.5d .
-# docker run -it --rm -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=$DISPLAY gid:17.1.5d
+# docker build --progress=plain --build-arg GID_VERSION=17.2.0-IR -t gid:17.2.0-IR .
+# docker run -it --rm -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=$DISPLAY gid:17.2.0-IR
